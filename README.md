@@ -3,7 +3,7 @@ Gatsby page template for creating static &amp; simple landing page.
 
 <span>![](https://img.shields.io/github/package-json/v/wiewiordev/gatsby-landing-page?style=flat-square) ![](https://img.shields.io/github/followers/wiewiordev?label=Follow%20on%20GitHub&style=flat-square) ![](https://img.shields.io/twitter/follow/wiewior_dev?color=blue&label=Follow%20on%20Twitter&style=flat-square)</span>
 
-![](/Users/wiewiordev/dev/gatsby-landing-page/gatsby-page.png)
+![](./gatsby-page.png)
 
 ## Features
 
