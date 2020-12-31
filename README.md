@@ -1,9 +1,9 @@
 # Gatsby Landing Page
-Gatsby page template for creating static &amp; simple landing page
+Gatsby page template for creating static &amp; simple landing page.
+
+<span>![](https://img.shields.io/github/package-json/v/wiewiordev/gatsby-landing-page?style=flat-square) ![](https://img.shields.io/github/followers/wiewiordev?label=Follow%20on%20GitHub&style=flat-square) ![](https://img.shields.io/twitter/follow/wiewior_dev?color=blue&label=Follow%20on%20Twitter&style=flat-square)</span>
 
 ![](/Users/wiewiordev/dev/gatsby-landing-page/gatsby-page.png)
-
-
 
 ## Features
 
@@ -29,16 +29,22 @@ Text data displayed on page and in meta tags in <head> can be found and changed 
 | `socialMedia`       | Array of objects with your social media accounts.<br /><br />`url`: URL of your social media account<br />`displayName`: display name of given account<br />`iconName`: name of icon for given account (find name icon here: [Fork Awesome](https://forkaweso.me/Fork-Awesome/icons/)) |
 | `projects`          | Array of objects with your projects.<br /><br />`url`: URL of your project<br />`displayName`: display name of given project<br />`languageIconName`: name of icon for project's main language (find name icon here: [Fork Awesome](https://forkaweso.me/Fork-Awesome/icons/))<br />`sourceIconName`: name of icon for given project's repository page, e.g. GitHub, GitLab, BitBucket (find name icon here: [Fork Awesome](https://forkaweso.me/Fork-Awesome/icons/)) |
 
-Image used in About Me section can be replaced in `src/images/avatar.png`. Suggested image size is 240x240 px. If you want to rename file, please update filename in `src/pages/index.js` in `query` function:
+- Image used in About Me section can be replaced in `src/images/avatar.png`. Suggested image size is 240x240 px. If you want to rename file, please update filename in `src/pages/index.js` in `query` function:
 
 ```javascript
 imageSharp(fixed: {originalName: {eq: "<new filename>.[ext]"}}) {
 ```
 
-Image used for displaying in social media can be replaced in `src/images/social-media-cover.png`. Suggested image size is 1200x630 px. If you want to rename file, please update filename in `src/components/seo.js` in `useStaticQuery` function:
+- Image used for displaying in social media can be replaced in `src/images/social-media-cover.png`. Suggested image size is 1200x630 px. If you want to rename file, please update filename in `src/components/seo.js` in `useStaticQuery` function:
 
 ```javascript
 imageSharp(fixed: {originalName: {eq: "<new filename>.[ext]"}}) {
+```
+
+- Favicon can be replaced in `src/images/favicon.png`. If you want to rename file, please update filename in `src/components/seo.js` in `useStaticQuery` function:
+
+```javascript
+favicon: imageSharp(fixed: {originalName: {eq: "<new filename>.[ext]"}}) {
 ```
 
 ## Copyrights

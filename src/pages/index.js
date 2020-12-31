@@ -11,7 +11,7 @@ function Home({ data }) {
       <SEO />
       <div className="about-me">
         <div className="wrapper-center">
-            <img className="profile-pic" src={data.imageSharp.fixed.src} alt={`${data.site.siteMetadata.name} avatar`} />
+            <img className="profile-pic" src={data.avatar.fixed.src} alt={`${data.site.siteMetadata.name} avatar`} />
             <h1>{data.site.siteMetadata.name}</h1>
             <div className="subheader">{data.site.siteMetadata.pageSubtitle}</div>
 
@@ -46,7 +46,7 @@ function Home({ data }) {
 
 export const query = graphql`
   query {
-    imageSharp(fixed: {originalName: {eq: "placeholder.png"}}) {
+    avatar: imageSharp(fixed: {originalName: {eq: "placeholder.png"}}) {
       fixed(height: 240, width: 240, quality: 90) {
         src
       }
