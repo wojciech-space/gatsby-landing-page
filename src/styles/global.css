@@ -1,0 +1,144 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body,
+.main-wrapper,
+main {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+main {
+    background-color: var(--bg-color);
+    display: grid;
+    grid-template-areas: "about-me"
+    "social-links"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 40px;
+}
+
+.about-me {
+    grid-area: about-me;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.social-links {
+    grid-area: social-links;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.profile-pic {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+
+.wrapper-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.divider {
+    width: 50%;
+    height: 2px;
+    background-color: #000000;
+    margin: 2rem auto;
+}
+
+h1 {
+    margin-top: 2rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.75rem;
+}
+
+h2 {
+    margin-top: 1.75rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+}
+
+.links h2 {
+    margin-top: 0;
+}
+
+.subheader {
+    font-size: 1.25rem;
+}
+
+.description-line {
+    margin-bottom: 0.75rem;
+    line-height: 1.25rem;
+}
+
+.link-line {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.link-line i {
+    color: #000;
+}
+
+.link-line a,
+.link-line a:hover,
+.link-line a:visited {
+    color: #333;
+    text-decoration: none;
+    line-height: 1.5rem;
+}
+
+.company-line,
+.copyright-line {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-link-line:last-of-type,
+.company-line:last-of-type,
+.copyright-line:last-of-type {
+    margin-bottom: 0%;
+}
+
+.fa {
+    margin-right: 1rem;
+}
+
+a,
+a:active,
+a:visited {
+    color: inherit;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+@media screen and (min-width: 48rem) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 40px;
+        grid-template-areas: "about-me social-links"
+        "footer footer";
+    }
+}
