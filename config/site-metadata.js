@@ -4,7 +4,7 @@ const siteMetadata = {
   pageSubtitle: '25 | web developer | they/them',
   seoTitle: 'John Doe',
   seoDescription: 'Gatsby page template for creating static & simple landing page',
-  siteUrl: 'https://github.com/wiewiordev/gatsby-landing-page',
+  siteUrl: 'https://wiewiorgatsbylandingpage.gtsb.io',
   backgroundColor: '#FF9900',
   twitterHandle: '@username',
   personDescription: [

@@ -44,13 +44,13 @@ function SEO() {
       <meta property="og:type" content="website" />
       <meta property="og:title" content={seo.seoTitle} />
       <meta property="og:description" content={seo.seoDescription} />
-      <meta property="og:image" content={coverImage} />
+      <meta property="og:image" content={`${seo.siteUrl}${coverImage}`} />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content={seo.twitterHandle} />
       <meta name="twitter:title" content={seo.seoTitle} />
       <meta name="twitter:description" content={seo.seoDescription} />
-      <meta name="twitter:image" content={coverImage} />
+      <meta name="twitter:image" content={`${seo.siteUrl}${coverImage}`} />
     </Helmet>
   );
 }
