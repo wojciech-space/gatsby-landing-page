@@ -47,6 +47,14 @@ imageSharp(fixed: {originalName: {eq: "<new filename>.[ext]"}}) {
 favicon: imageSharp(fixed: {originalName: {eq: "<new filename>.[ext]"}}) {
 ```
 
+## How to use in your own project
+
+1. Install Gatsby CLI: `npm i -g gatsby-cli`
+2. Initialize project: `gatsby new project-name https://github.com/wiewiordev/gatsby-landing-page`
+3. Run dev environment: `cd project-name && npm start`
+4. Change data in `config/site-metadata.js`
+5. Deploy it!
+
 ## Copyrights
 
 <span>Photo used for OpenGraph tag by <a href="https://unsplash.com/@cgower?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Christopher Gower</a> on <a href="https://unsplash.com/s/photos/web-development?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
